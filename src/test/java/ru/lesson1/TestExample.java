@@ -10,6 +10,6 @@ public class TestExample {
     @Test
     public void testExampleMethod(){
         double result = testFunction(2);
-        assertEquals("Wrong value!", result, 1, 0);
+        assertEquals("Wrong value!", result, 4, 0);
     }
 }
