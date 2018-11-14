@@ -1,15 +1,15 @@
 package ru.lesson1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static ru.lesson1.TestClass.testFunction;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static ru.example.TestClass.testFunction;
 
 public class TestExample {
 
     @Test
-    public void testExampleMethod(){
+    public void testExampleMethod() {
         double result = testFunction(2);
-        assertEquals("Wrong value!", result, 4, 0);
+        assertEquals(result, 4, "Wrong value!");
     }
 }

@@ -1,4 +1,4 @@
-package ru.lesson1;
+package ru.example;
 
 public abstract class TestClass {
 
