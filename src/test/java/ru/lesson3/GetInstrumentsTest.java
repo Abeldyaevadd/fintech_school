@@ -1,11 +1,13 @@
 package ru.lesson3;
 
+import io.qameta.allure.*;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import ru.entity.TradeInfo;
 
 import static io.restassured.RestAssured.given;
-
+@Feature("Описание инструмента по идентификатору")
+@Story("Первый вариант тестов")
 public class GetInstrumentsTest {
 
     @Test
