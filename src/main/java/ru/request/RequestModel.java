@@ -1,5 +1,7 @@
 package ru.request;
 
+import io.qameta.allure.Step;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.authentication.*;
 import io.restassured.builder.*;
 import io.restassured.filter.log.*;
@@ -18,10 +20,7 @@ public abstract class RequestModel {
                 .setBaseUri(BASE_URI)
                 .setBasePath(BASE_PATH)
                 .setAuth(authScheme)
-               // .addHeader("Authorization", "Basic ZmludGVjaDoxcTJ3M2Uh") //for token auth demonstrate
-                .addFilter(new RequestLoggingFilter())
-                .addFilter(new ResponseLoggingFilter())
-                //.addFilter(new ErrorLoggingFilter())  //for error demonstrate
+                .addFilter(new AllureRestAssured())
                 .build();
     }
 
